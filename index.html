@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register and Login</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
-    <div class="form-container">
-        <h2>Register</h2>
-        <form action="#">
-            <input type="text" placeholder="Username" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-        </form>
-    </div>
-    <div class="form-container">
-        <h2>Login</h2>
-        <form action="#">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
+    <h2>Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" placeholder="Enter your student ID">
+        </div>
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" id="birth-date">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic">
+        </div>
+        <button type="submit">Register</button>
+    </form>
 </div>
 </body>
 </html>
