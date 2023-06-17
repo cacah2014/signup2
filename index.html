@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="rtl">
 <head>
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <h2>Registration Form</h2>
-    <form>
-        <div class="form-group">
-            <label for="student-id">Student ID:</label>
-            <input type="text" id="student-id" placeholder="Enter your student ID">
-        </div>
-        <div class="form-group">
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" placeholder="Enter your full name">
-        </div>
-        <div class="form-group">
-            <label for="birth-date">Date of Birth:</label>
-            <input type="date" id="birth-date">
-        </div>
-        <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" id="age" placeholder="Enter your age">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password">
-        </div>
-        <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="skills">Skills:</label>
-            <textarea id="skills" placeholder="Enter your skills"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="profile-pic">Profile Picture:</label>
-            <input type="file" id="profile-pic">
-        </div>
-        <button type="submit">Register</button>
+    <form action="method">
+        <label for="stuid">شماره دانشجویی</label>
+        <input type="text" name="stuid" id="stuid">
+        <br>
+        <label for="name">نام*</label>
+        <input type="text" name="name" id="name" >
+        <br>
+        <label for="family">نام خانوادگی</label>
+        <input type="text" name="family" id="family">
+        <br>
+        <label for="birthday">تاریخ تولد</label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <label for="age"> سن:</label>
+        <input type="number" name="age" id="age"  min="20" max="40">
+        <br>
+        <label for="email">ایمیل</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">پسورد</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="">جنسیت</label>
+        <label for="female">زن</label>
+        <input type="radio" id="gender" name="female" >
+        <label for="male">مرد</label>
+        <input type="radio" id="gender" name="male" >
+        <br>
+        <label for="">مهارت ها:</label>
+        <label for="wordpress">وردپرس</label>
+        <input type="checkbox" name="wordpress" id="skills">
+        <label for="PHP">PHP</label>
+        <input type="checkbox" name="PHP" id="skills">
+        <label for="SEO">SEO</label>
+        <input type="checkbox" name="SEO" id="skills">
+        <label for="python">python</label>
+        <input type="checkbox" name="python" id="skills">
+        <br>
+        <label for="picture">تصویر</label>
+        <input type="file" name="picture" id="picture">
+        <br> <input type="submit" value="ثبت نام" id="sumbit">
     </form>
-</div>
 </body>
 </html>
