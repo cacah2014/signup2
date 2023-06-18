@@ -1,13 +1,3 @@
-* {
-    font-family: Vazirmatn, sans-serif;
-}
-
-
-
-sumbit {
-    font-family: Vazirmatn, sans-serif;
-    background-color: #2d376e;
-    border-style: none;
-    color: #2d376e;
-
+body,input {
+    font-family: Vazirmatn, sans-serif !important;
 }
